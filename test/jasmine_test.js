@@ -1,6 +1,7 @@
 'use strict';
 
 var grunt = require('grunt'),
+    _ = require('lodash'),
     phantomjs = require('grunt-lib-phantomjs').init(grunt),
     jasmine = require('../tasks/lib/jasmine.js').init(grunt, phantomjs);
 
@@ -8,7 +9,7 @@ var grunt = require('grunt'),
 
 function runTemplate(src, context) {
   var source = grunt.file.read(src);
-  return grunt.util._.template(source, context);
+  return _.template(source, context);
 }
 
 // Just strips whitespace for now. Should do a proper min of everything

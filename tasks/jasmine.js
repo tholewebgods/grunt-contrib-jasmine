@@ -212,7 +212,7 @@ module.exports = function(grunt) {
     });
 
     phantomjs.onAny(function() {
-      var args = [this.event].concat(grunt.util.toArray(arguments));
+      var args = [this.event].concat(_.toArray(arguments));
       grunt.event.emit.apply(grunt.event, args);
     });
 
@@ -397,7 +397,7 @@ module.exports = function(grunt) {
       var template = grunt.file.read(options.junit.template || junitTemplate);
       if (options.junit.consolidate) {
         var xmlFile = path.join(options.junit.path, 'TEST-' + testsuites.suite1.name.replace(/[^\w]/g, '') + '.xml');
-        grunt.file.write(xmlFile, grunt.util._.template(template, { testsuites: _.values(testsuites)}));
+        grunt.file.write(xmlFile, _.template(template, { testsuites: _.values(testsuites)}));
       } else {
         _.forEach(testsuites, function(suiteData) {
           var xmlFile = path.join(options.junit.path, 'TEST-' + suiteData.name.replace(/[^\w]/g, '') + '.xml');

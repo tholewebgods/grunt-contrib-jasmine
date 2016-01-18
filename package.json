@@ -1,23 +1,20 @@
 {
   "name": "grunt-contrib-jasmine",
-  "description": "Run jasmine specs headlessly through PhantomJS.",
+  "description": "Run jasmine specs headlessly through PhantomJS. Forked from the official v0.5.3, modified to depend another grunt-lib-phantomjs.",
   "version": "0.5.3",
-  "homepage": "https://github.com/gruntjs/grunt-contrib-jasmine",
+  "homepage": "https://github.com/tholewebgods/grunt-contrib-jasmine",
   "author": {
-    "name": "Grunt Team",
+    "name": "Grunt Team feat. Strato Frontend Development",
     "url": "http://gruntjs.com/"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/gruntjs/grunt-contrib-jasmine.git"
-  },
-  "bugs": {
-    "url": "https://github.com/gruntjs/grunt-contrib-jasmine/issues"
+    "url": "https://github.com/tholewebgods/grunt-contrib-jasmine.git"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/gruntjs/grunt-contrib-jasmine/blob/master/LICENSE-MIT"
+      "url": "https://github.com/tholewebgods/grunt-contrib-jasmine/blob/master/LICENSE-MIT"
     }
   ],
   "main": "Gruntfile.js",

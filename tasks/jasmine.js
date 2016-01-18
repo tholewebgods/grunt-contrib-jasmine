@@ -14,7 +14,7 @@ module.exports = function(grunt) {
     path = require('path');
 
   // npm lib
-  var phantomjs = require('grunt-lib-phantomjs').init(grunt);
+  var phantomjs = require('rzg-grunt-lib-phantomjs').init(grunt);
 
   // local lib
   var jasmine = require('./lib/jasmine').init(grunt, phantomjs);

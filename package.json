@@ -1,7 +1,7 @@
 {
   "name": "rzg-grunt-jasmine",
   "description": "Run jasmine specs headlessly through PhantomJS. Forked from the official v0.5.3, modified to depend another grunt-lib-phantomjs.",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "homepage": "https://github.com/tholewebgods/grunt-contrib-jasmine",
   "author": {
     "name": "Grunt Team feat. Strato Frontend Development",
